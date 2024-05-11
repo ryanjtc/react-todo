@@ -1,0 +1,41 @@
+$backgroundColor: #ffffff;
+$containerColor: #fff;
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: $backgroundColor;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: $containerColor;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.tasks-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: $containerColor;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .form-container {
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+}
